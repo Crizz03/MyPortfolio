@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(232, 231, 231);
+    padding: 0;
+    margin: 0;
+
+}
+
+nav{
+    display: flex;
+    background-color: #2A2A2A;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav a{  
+    margin-right: 30px;                                                            
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+nav a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    padding: 0;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 0.4s;
+
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+
+.logo{
+    margin-right: 850px;
+    margin-left: 10px;
+}
+
+.head{
+    text-align: center;
+    color: #573007;
+    line-height: 0.5;
+    margin-top: 150px;
+    font-family: roboto;
+}
+
+.sub-head{
+    margin-top: 80px;
+    color: #573007;
+    margin-left: 150px;
+    font-family: Inria;
+    font-size: 23px;
+    margin-bottom: 30px;
+    
+}
+
+.tech-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 160px; 
+}
+
+.tech-skills, .skill-icon{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.tech-skills h4{
+    margin-top: 50px;
+    background-color: rgb(217, 122, 13);
+    width: 250px;
+    margin-left: 22px;
+    padding: 3px;
+    border-radius: 50px;
+}
+
+.skills1, .skills2, .skills3, .skills4, .skills5, .skills6{
+    width: 300px;
+    height: 250px;  
+    text-align: center;
+    background-color: #2A2A2A;
+    border-radius: 7px;
+    align-items: center;
+}
+
+.soft-skills{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.h3{
+    color: #573007;
+    font-family: Inria;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stacks logo and links vertically */
+        padding: 10px;
+    }
+
+    .logo {
+        margin: 0 0 10px 0; /* Removes the 850px margin */
+    }
+
+    nav a {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-skills, .content3, .hobbies {
+        margin-left: 0;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .skills1, .box1, .box2, .box3, .box4 {
+        width: 90%; /* Boxes take up full width on mobile */
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
